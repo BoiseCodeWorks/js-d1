@@ -108,3 +108,48 @@ users.splice(3, 0, "Zach", "Joe");
 //Makes a copy of a section of the array
 let offset = 10;
 let someUsers = users.slice(3, 7);
+
+console.log("LOOPS SECTION");
+
+//SECTION Loops
+let cats = [
+  { name: "garfield" },
+  { name: "felix" },
+  { name: "tom" },
+  { name: "Mr. Snibbley" }
+];
+
+for (let i = 0; i < cats.length; i++) {
+  let cat = cats[i];
+  console.log(cat.name);
+  if (cat.name == "tom") {
+    break;
+  }
+}
+console.log("5bil");
+let num = 0;
+while (num < 5000000000) {
+  num++;
+}
+console.timeEnd("5bil");
+
+do {} while (false);
+
+//object itteration
+for (const prop in me) {
+}
+
+//array itteration
+cats.forEach(cat => {
+  console.log(cat.name);
+});
+
+// let spongeString = "Hello from Bikini Bottom";
+// let strArr = spongeString.toLowerCase().split("");
+// for (let i = 1; i < strArr.length; i += 2) {
+//   strArr[i] = strArr[i].toUpperCase();
+//   if (strArr[i] == " ") {
+//     i--;
+//   }
+// }
+// console.log(strArr.join(""));
